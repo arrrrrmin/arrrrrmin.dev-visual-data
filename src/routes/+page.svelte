@@ -51,7 +51,7 @@
                                 />
                             {:else}
                                 <div
-                                    class="w-full h-full object-cover object-center transition-transform duration-200 group-hover:scale-102"
+                                    class="w-full h-full object-cover bg-stone-100 object-center transition-transform duration-200 group-hover:scale-102"
                                 ></div>
                             {/if}
                         </a>
@@ -70,7 +70,7 @@
                                 />
                             {:else}
                                 <div
-                                    class="w-full h-full object-cover object-center transition-transform duration-200 group-hover:scale-102"
+                                    class="w-full h-full object-cover bg-stone-100 object-center transition-transform duration-200 group-hover:scale-102"
                                 ></div>
                             {/if}
                         </a>
