@@ -1,5 +1,5 @@
 export const title = "Datavis Porrrrrtfolio";
-export const domain = "datavis.arrrrrmin.dev"
+export const domain = "vis.arrrrrmin.dev"
 export const intro = "Tach 👋, ich bin Armin und das ist meine kleine Experimente- und Portfolio-Webseite."
 export const author = "Armin Müller-von Fischer (arrrrrmin)";
 export const gravatarId = "https://api.gravatar.com/v3/profiles/defendorjoyfully5b71a1a62b";
