@@ -1,0 +1,88 @@
+[
+    {
+        "id": "lanz-mining",
+        "size": "big",
+        "title": "Lanz Mining",
+        "link": "https://lanz-mining.arrrrrmin.dev",
+        "preview": {
+            "url": "lanz-mining-preview.png",
+            "alt": "5 farbige Flächen jeweils absteigend, entsprechend der Sendestärke der ÖRR-Talkshow deren Daten im Projekt erkundet werden."
+        }
+    },
+    {
+        "id": "floating-borders",
+        "size": "small",
+        "slug": "floating-borders",
+        "title": "Arbiträre Grenzen",
+        "description": "Historische Grenzen in Europa seit 1886, animiert mit D3js. Daten via ETH Zürich (International Conflict Research).",
+        "preview": {
+            "url": "floating-borders-preview.gif",
+            "alt": "Verändernde Grenzen mit schlimmem eu-gaze. Visualisierung zeigt siche verändernde Grenzen, über die Zeit (im Ausschnitt anfang 20tes Jahrhundert)."
+        },
+        "data": {
+            "type": "json",
+            "url": "https://datapublisher.s3.eu-central-1.amazonaws.com/euborders.geojson"
+        }
+    },
+    {
+        "id": "wikirevia",
+        "size": "small",
+        "title": "Wikirevia (wip)",
+        "link": "https://wikirevia.arrrrrmin.dev"
+    },
+    {
+        "id": "bsky-tags-talkshows",
+        "size": "small",
+        "slug": "bsky-tags-talkshows",
+        "title": "Hashtag Circle",
+        "description": "Wie verhalten sich die ÖRR Talkshow Hashtags #lanz, #miosga, #hartaberfair und co.?",
+        "preview": {
+            "url": "bsky-tags-talkshows-preview.png",
+            "alt": "A circle of hashtags, connected by lines. So many lines that one can barely see what is happening. This is why one needs to hover the connections."
+        },
+        "data": {
+            "type": "csv",
+            "url": "https://datapublisher.s3.eu-central-1.amazonaws.com/bsky-ts-2025-9-24.csv"
+        }
+    },
+    {
+        "id": "gpn24-talk-karlsruhe-zkm",
+        "size": "big",
+        "title": "GPN23 Talk, Karlsruhe ZKM",
+        "link": "https://www.youtube.com/watch?v=HaFbmeWbEBw",
+        "preview": {
+            "url": "gpn23-talk-preview.png",
+            "alt": "Vortragender rechts unten, Präsentationsscreen zeigt Halbkreis mit Medienvertretungen in ÖRR-Talkshows."
+        }
+    },
+    {
+        "id": "fds-consultants-db",
+        "size": "small",
+        "slug": "fds-consultants-db",
+        "title": "Die FDS Beraterdatenbank",
+        "description": "Wer Berät welchen Teil der Regierung und für wieviel? Eine Datenbank von Frag den Staat zu verfügung gestellt.",
+        "preview": {
+            "url": "fds-consultants-db-preview.gif",
+            "alt": "Wiederholend werden Ausgaben der Bundesregierung in Kacheln navigiert. Von Jahr zu Ministerium über Beratung zu Auftrag gibt es einige Ebenen."
+        },
+        "data": {
+            "type": "csv",
+            "url": "https://datapublisher.s3.eu-central-1.amazonaws.com/consultants-db.csv"
+        }
+    },
+    {
+        "id": "facts-vs-attention",
+        "size": "small",
+        "slug": "facts-vs-attention",
+        "title": "Fakten & Aufmerksamkeit",
+        "description": "Wann wohl der Faktencheck kommt und liest den dann noch wer?",
+        "preview": {
+            "url": "facts-vs-attention-preview.png",
+            "alt": "Kommentarfrequenzen zum #miosga auf Bluesky ansteigend bis die Sendung ausgestrahlt wird. Doch wann kommt der Faktencheck und hat es für diesen noch Aufmerksamkeit?"
+        },
+        "data": {
+            "type": "json",
+            "url": "https://datapublisher.s3.eu-central-1.amazonaws.com/factsvsattention.json"
+        }
+    }
+]

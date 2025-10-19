@@ -1,0 +1,45 @@
+import * as d3 from "d3";
+import { getVisualInfo } from "$lib/utils.js";
+
+export const prerender = true;
+
+async function fetchData({ url, type }) {
+    if (!url) throw new Error("fetchData: Missing URL");
+    if (!type) type = "json";
+
+    switch (type) {
+        case "csv":
+            return await d3.csv(url);
+        case "tsv":
+            return await d3.tsv(url);
+        case "json":
+            return await d3.json(url);
+        case "text":
+            return await fetch(url).then((r) => r.text());
+        default:
+            throw new Error(`fetchData: Unsupported type '${type}'`);
+    }
+}
+
+
+export const load = async ({ params }) => {
+
+    const visinfo = getVisualInfo(params.slug);
+    let visdata;
+    let error;
+
+    try {
+        if (visinfo?.data) {
+            visdata = await fetchData(visinfo.data);
+            error = undefined;
+        }
+    } catch (err) {
+        console.error("Data fetch failed:", err);
+        error = "Failed to load data.";
+        visdata = undefined;
+    }
+
+    return {
+        slug: params.slug, visdata: visdata, visinfo: visinfo, error: error,
+    }
+}
