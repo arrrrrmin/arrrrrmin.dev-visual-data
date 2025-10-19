@@ -65,5 +65,6 @@
                 </a>
             </li>
         {/each}
+        <li>Oder per mail: hello [at] arrrrrmin [dot] dev</li>
     </ol>
 </div>
