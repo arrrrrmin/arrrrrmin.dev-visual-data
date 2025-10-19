@@ -23,6 +23,7 @@
 		property="og:image"
 		content={`https://${config.domain}/favicon/web-app-manifest-512x512.png`}
 	/>
+	<meta name="theme-color" content="#FBBF24">
 </svelte:head>
 
 <div class="font-serif">
