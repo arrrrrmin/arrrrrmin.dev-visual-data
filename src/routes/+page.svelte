@@ -18,11 +18,9 @@
         Für den Titel der Seite kann ich nichts, mir war wirklich nix besseres
         eingefallen.
     </p>
-    <div class="pt-4">
-        <a href="/about" class="hover:text-stone-500 underline"
-            ><h3 class="text-lg">Über mich</h3></a
-        >
-    </div>
+    <p class="pt-4">
+        <a href="/about" class="hover:text-stone-500 underline">Über mich</a>
+    </p>
 </div>
 <div class="py-8 md:max-w-[80%]">
     <div
