@@ -50,9 +50,11 @@
             .on("click", function (_) {
                 if (isRunning && animationInterval) {
                     isRunning = false;
+                    hinter.attr("display", "block");
                     animationInterval.stop();
                 } else {
                     step = doStep(step);
+                    hinter.attr("display", "none");
                     isRunning = true;
                     animationInterval = d3.interval(
                         doAnimationStep,
@@ -60,6 +62,15 @@
                     );
                 }
             });
+
+        const hinter = svg
+            .append("g")
+            .attr("transform", `translate(${width - 150}, 40)`)
+            .append("text")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("text-align", "end")
+            .text(!isRunning ? "Click to start/pause" : "");
 
         const projection = d3.geoMercator().fitExtent(
             [

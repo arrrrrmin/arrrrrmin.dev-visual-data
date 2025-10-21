@@ -13,7 +13,7 @@
         "id": "floating-borders",
         "size": "small",
         "slug": "floating-borders",
-        "title": "Arbiträre Grenzen",
+        "title": "Arbiträre Grenzen?",
         "description": "Historische Grenzen in Europa seit 1886, animiert mit D3js. Daten via ETH Zürich (International Conflict Research).",
         "preview": {
             "url": "floating-borders-preview.gif",
