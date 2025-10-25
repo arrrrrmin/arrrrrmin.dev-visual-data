@@ -55,7 +55,7 @@
                         </a>
                     {:else}
                         <a
-                            href={visual.link}
+                            href={visual.link ? visual.link : "/"}
                             target="_blank"
                             class="absolute inset-0"
                         >
