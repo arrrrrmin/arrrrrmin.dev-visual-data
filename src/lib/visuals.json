@@ -14,7 +14,7 @@
         "size": "small",
         "slug": "with-open-cards",
         "title": "'Mit offenen Karten'-Karte (wip)",
-        "description": "Ein Nebenprojekt zum stöbern und erkunden. Wollte mit diesem Projekt die Navigation des Arte.tv Formats 'Mit offenen Karten' neu zu denken. Alle Episoden auf einer Karte und Geo-Kontexte der Episoden mit Linien visualisieren.",
+        "description": "Ein Nebenprojekt zum Stöbern und Erkunden. Wollte mit diesem Projekt die Navigation des Arte.tv Formats 'Mit offenen Karten' mal anders denken. Alle Episoden auf einer Karte und Geo-Kontexte der Episoden mit Linien visualisieren.",
         "preview": {
             "url": "with-open-cards-preview.png",
             "alt": "Teil einer Weltkarte auf der Artes 'Mit offenen Karten'-Episoden anhand der Geo-Lokation visualisiert werden. Verbindungen zeigen andere im Kontext der Episode vorkommenden Lokationen."
