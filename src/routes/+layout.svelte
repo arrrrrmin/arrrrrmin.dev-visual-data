@@ -28,7 +28,7 @@
 
 <div class="font-serif">
 	<header
-		class="fixed px-4 sm:px-8 py-4 left-0 top-0 bg-stone-50 min-w-full border-b-1 border-stone-200 z-10"
+		class="fixed px-4 sm:px-8 py-4 left-0 top-0 bg-stone-50 min-w-full border-b-1 border-stone-200 z-20"
 	>
 		<a href="/" class="hover:text-stone-500 hover:underline"
 			><h1 class="text-lg">{config.title}</h1></a
@@ -59,7 +59,7 @@
 		</div>
 	</main>
 	<footer
-		class="mt-12 px-4 sm:px-8 py-4 lg:flex lg:justify-between bg-stone-50 min-w-full border-t-1 border-stone-200 z-10"
+		class="mt-12 px-4 sm:px-8 py-4 lg:flex lg:justify-between bg-stone-50 min-w-full border-t-1 border-stone-200 z-20"
 	>
 		<div>
 			{config.title}, build with

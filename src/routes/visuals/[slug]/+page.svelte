@@ -15,7 +15,9 @@
     <p class=" mb-6">{visinfo.description}</p>
 
     <!-- 3️⃣ Component & data as props -->
-    <Factory slug={data.slug} data={visdata} />
+    <div class={visinfo.vissize === "big" ? "lg:max-w-full" : "lg:max-w-[75%]"}>
+      <Factory slug={data.slug} data={visdata} />
+    </div>
   </div>
 {:else}
   <div class="text-center py-20 text-gray-500">Info not found.</div>

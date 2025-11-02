@@ -21,7 +21,6 @@ async function fetchData({ url, type }) {
     }
 }
 
-
 export const load = async ({ params }) => {
 
     const visinfo = getVisualInfo(params.slug);
@@ -30,8 +29,15 @@ export const load = async ({ params }) => {
 
     try {
         if (visinfo?.data) {
-            visdata = await fetchData(visinfo.data);
-            error = undefined;
+            if (Array.isArray(visinfo.data)) {
+                // In case the data is an Array, we load from multiple sources
+                visdata = await Promise.all(visinfo.data.map(async (entry) => await fetchData(entry)));
+                error = undefined;
+            } else {
+                // Otherwise data is an object and we can load directly
+                visdata = await fetchData(visinfo.data);
+                error = undefined;
+            }
         }
     } catch (err) {
         console.error("Data fetch failed:", err);
