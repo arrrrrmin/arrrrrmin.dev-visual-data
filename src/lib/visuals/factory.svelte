@@ -18,18 +18,19 @@
             (slug === "bsky-tags-talkshows" &&
                 (await import("./components/bsky-tags-talkshows.svelte"))
                     .default) ||
+            (slug === "with-open-cards" &&
+                (await import("./components/with-open-cards.svelte"))
+                    .default) ||
             (await import("./blank.svelte")).default;
     });
 </script>
 
-<div class="lg:max-w-[75%]">
-    <div
-        class="p-6 text-base font-sans bg-stone-100 overflow-clip rounded-lg border-1 border-stone-200"
-    >
-        {#if Component}
-            <Component {data}></Component>
-        {:else}
-            <p>Loading visualization...</p>
-        {/if}
-    </div>
+<div
+    class="p-1 sm:p-2 md:p-4 text-base font-sans bg-stone-100 overflow-clip rounded-lg border-1 border-stone-200"
+>
+    {#if Component}
+        <Component {data}></Component>
+    {:else}
+        <p>Loading visualization...</p>
+    {/if}
 </div>

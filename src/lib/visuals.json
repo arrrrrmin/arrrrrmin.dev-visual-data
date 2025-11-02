@@ -11,14 +11,25 @@
     },
     {
         "id": "with-open-cards",
-        "size": "large",
+        "size": "small",
+        "slug": "with-open-cards",
         "title": "'Mit offenen Karten'-Karte (wip)",
-        "description": "Ein Nebenprojekt um die Navigation des Arte.tv Formats 'Mit offenen Karten' neu zu denken. Alle Episoden auf einer Karte und Geo-Kontexte der Episoden mit Linien visualisieren.",
-        "link": "https://chaos.social/@arrrrrmin/115434464469706882",
+        "description": "Ein Nebenprojekt zum stöbern und erkunden. Wollte mit diesem Projekt die Navigation des Arte.tv Formats 'Mit offenen Karten' neu zu denken. Alle Episoden auf einer Karte und Geo-Kontexte der Episoden mit Linien visualisieren.",
         "preview": {
             "url": "with-open-cards-preview.png",
             "alt": "Teil einer Weltkarte auf der Artes 'Mit offenen Karten'-Episoden anhand der Geo-Lokation visualisiert werden. Verbindungen zeigen andere im Kontext der Episode vorkommenden Lokationen."
-        }
+        },
+        "vissize": "big",
+        "data": [
+            {
+                "type": "json",
+                "url": "https://datapublisher.s3.eu-central-1.amazonaws.com/arte-open-cards-geolocations.json"
+            },
+            {
+                "type": "json",
+                "url": "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"
+            }
+        ]
     },
     {
         "id": "floating-borders",
