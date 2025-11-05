@@ -32,6 +32,16 @@
         ]
     },
     {
+        "id": "svelte-senarios",
+        "size": "small",
+        "title": "Svelte scenarios",
+        "link": "https://svelte-scenarios.arrrrrmin.dev",
+        "preview": {
+            "url": "svelte-scenarios-preview.png",
+            "alt": "In drei Teilen von unten nach oben 'Scen-ari-o' geschrieben mit dunkelm Pink auf weißem Grund."
+        }
+    },
+    {
         "id": "floating-borders",
         "size": "small",
         "slug": "floating-borders",
